@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Source Han Serif';
+    src: local('Source Han Serif CN'), 
+         url('../fonts/SourceHanSerifSC-VF.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Source Han Serif',sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    
+}
+
+/* 最大的容器 */
+.container {
+    display: flex;
+}
+
+    /* 左侧菜单栏 */
+    .sidebar {
+        width: 15vw;
+        background-color: #333;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .sidebar #ul1 {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .sidebar #ul1 li {
+            padding: 15px;
+        }
+
+        .sidebar #ul1 li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar #ul1 li a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar #ul2{
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap : 5px;
+            list-style-type: square;
+        }
+        .sidebar #ul2 li a {
+            color: rgb(201, 201, 201);
+            text-decoration: none;
+            font-size: 85%;
+        }
+
+    /* 主体 */
+    .main-content {
+        margin-left: 15vw;
+        background-color: #dedede;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+        /* 上方导航栏 */
+        .navbar {
+            background-image: url('../images/screenshot4-cut.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+            height: 100px;
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+            /* 导航栏按钮 */
+            .navbar button {
+                height: 30px;
+                width: 45px;
+                left: 10px;
+                border: none;
+                background-color: #ffffff00;
+                cursor: pointer;
+            }
+                #back {
+                    max-width: 30px;
+                }
+
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;            
+        }
+        .content img {
+            max-width: 400px;
+            border-radius: 500px;
+            margin: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 6px rgb(95, 115, 152);
+        }
+        .text-box {
+            background-color: #f5f5f5;
+            max-width: 65%;
+            display: flex;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(95, 115, 152, 0.253);
+        }
+        .text {
+            text-align: center;   
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 200, 255); 
+        }
+        a:link {
+            color: rgb(0, 200, 255); 
+        }
+        a:visited {
+            color: rgb(0, 200, 255); 
+        }
+        a:hover {
+            color: rgb(255, 208, 0); 
+            font-weight: bold; 
+        }
+        a:active {
+            color: rgb(67, 67, 67); 
+        }
+        .text p {
+            line-height: 200%;
+            text-align: left;
+            margin: 0;
+            text-indent: 2em;
+        }
+        #about {
+            font-size: 100%;
+            font-style: italic;
+        }
+        
+        .footer {
+            align-self: center;
+            font-size: 85%;
+            justify-self: flex-end;
+            margin-top: 40px;
+        }

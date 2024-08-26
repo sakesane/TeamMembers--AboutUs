@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>网页基本框架</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <img src = "images/logo.png" class = "img">
+            <ul id = "ul1">
+                <li><a href="index.htm">光圈科技爱猫TV首页</a></li>
+                <li><a href="./game/index.htm">关于传送奇境</a></li>
+                <li><a href="#members">爱猫TV员工</a></li>
+            </ul>
+            <ul id = "ul2">
+                <li><a href="./members/yzn/index.htm">叶子宁</a></li>
+                <li><a href="./members/jht/index.htm">蒋浩天</a></li>
+                <li><a href="./members/sj/index.htm">时佳</a></li>
+                <li><a href="./members/dsk/index.htm">董石楷</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="navbar">
+                <div class="button">
+                    <button onclick="goBack()"><img src = "images/back.png" id = "back"></button>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Welcome to Aperture Science Cat Lover TV</h1>
+                <br>
+                <div>
+                    <p>光圈科技爱猫TV是负责《乐奈与抹茶奇境：传送》游戏开发的四人小组。</p>
+                    <p>小组共有如下四名成员:</p>
+                </div>
+                <a id="members"></a>
+                <div class = "card">
+                    <div class = "card-container">
+                        <div class="cards-inner front">
+                            <img src = "images/yzn2.jpg">
+                            <div>
+                                <div class="h1">叶子宁</div>
+                                <div>组长/主程</div>
+                            </div>
+                        </div>
+                        <div class="cards-inner back">
+                            <p>倘若努力的尽头就是奇迹</p>
+                            <div class="row">
+                                <button onclick="window.location='members/yzn/index.htm'">More About...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-container">
+                        <div class="cards-inner front">
+                            <img src = "images/jht.jpg">
+                            <div>
+                                <div class="h1">蒋浩天</div>
+                                <div>主程/技术总监</div>
+                            </div>
+                        </div>
+                        <div class="cards-inner back">
+                            <p>Ha det bra.</p>
+                            <div class="row">
+                                <button onclick="window.location='members/jht/index.htm'">More About...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-container">
+                        <div class="cards-inner front">
+                            <img src = "images/sj.jpg">
+                            <div>
+                                <div class="h1">时佳</div>
+                                <div>程序/美工</div>
+                            </div>
+                        </div>
+                        <div class="cards-inner back">
+                            <p>吾好梦中杀人</p>
+                            <div class="row">
+                                <button onclick="window.location='members/sj/index.htm'">More About...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-container">
+                        <div class="cards-inner front">
+                            <img src = "images/dsk.jpg">
+                            <div>
+                                <div class="h1">董石楷</div>
+                                <div>程序/测试</div>
+                            </div>
+                        </div>
+                        <div class="cards-inner back">
+                            <p>Acknowledge their doom or fortune,<br>
+                                give up benevolence.</p>
+                            <div class="row">
+                                <button onclick="window.location='members/dsk/index.htm'">More About...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            <div class = "footer">
+                <p>© 2024 光圈科技爱猫TV 保留所有权利。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
