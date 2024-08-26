@@ -149,9 +149,19 @@ body {
             text-indent: 2em;
         }
         #about {
-            font-size: 100%;
-            font-style: italic;
+            display: block;
+            font-size: 150%;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            margin-inline-start: -30px;
+            padding-inline-start: 0px; 
+            border-inline-start: 4px solid rgba(20, 11, 70, 0.5); /* 完整的边框属性 */
+            text-align: left;
+            position: relative;
         }
+
         
         .footer {
             align-self: center;
