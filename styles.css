@@ -201,7 +201,6 @@
     animation: gradient-animation 5s ease infinite;
     color:#ffffff;
     font-weight: bold;
-    font-family: "STXihei";
 }
 @keyframes gradient-animation {
     0% {
