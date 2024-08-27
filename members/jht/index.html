@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网页基本框架</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
     <div class="container">
         <nav class="sidebar">
-            <img src = "../../images/logo.png" class = "img">
-            <ul id = "ul1">
+            <img src="../../images/logo.png" class="img">
+            <ul id="ul1">
                 <li><a href="../../index.html">光圈科技爱猫TV首页</a></li>
                 <li><a href="#">关于传送奇境</a></li>
                 <li><a href="../../index.html">爱猫TV员工</a></li>
             </ul>
-            <ul id = "ul2">
+            <ul id="ul2">
                 <li><a href="../yzn/index.html">叶子宁</a></li>
                 <li><a href="index.html">蒋浩天</a></li>
                 <li><a href="../sj/index.html">时佳</a></li>
@@ -25,7 +27,7 @@
         <div class="main-content">
             <div class="navbar">
                 <div class="button">
-                    <button onclick="goBack()"><img src = "../../images/back.png" id = "back"></button>
+                    <button onclick="goBack()"><img src="../../images/back.png" id="back"></button>
                 </div>
             </div>
             <div class="content">
@@ -35,29 +37,40 @@
                 <div class="text-box">
                     <div class="text">
                         <h3>主程序员 / 技术总监 + <s>提出乱七八糟要求的人</s></h3>
+                        <blockquote>
+                            <p>みんなひとりぼっちだけど</p>
+                            <p>孤独だけじゃない</p>
+                            <p>あなただけここにいれば</p>
+                            <p>孤独じゃない</p>
+                        </blockquote>
                         <p id="about">关于我</p>
                         <p>北理软件工程大二在读</p>
-                        <p>喜欢动画，热爱游戏，虽然总是觉得有些ACG老粉总是带着婆罗门的偏见在审视当今业界，但是对花田十辉与其代表作 Girls Band Cry，京吹3，LoveLive! Superstar 一样充满了意见。<s>（喷别人婆罗门的人，终将也会成为婆罗门）</s></p>
-                        <p>最近比较喜欢的动画当然是 <b>《Bang Dream! It's MyGO!!!!!》</b> <s>（所以才有了本组的抽象选题）</s>，另外也很喜欢 4 月的 <b>《终末电车去哪儿》</b> 这部没什么人看的抽象电波原创。另外还很喜欢的是 <b>《终将成为你》</b> 和 <b>《新世纪福音战士》</b>，但是不喜欢明日香。</p>
-                        <p>喜欢火车，不管是坐火车还是拍火车。跑去日本旅游也天天在绕远路坐有意思的电车。目前最喜欢的车型应该是 JR 西日本的 <b>500系新干线</b>，在旅游的时候也有幸于退役前体验到了这个最喜欢的车型。</p>
-                        <p>初中碰过一点算法竞赛，但是太菜了就没学下去，然后 <s>误入歧途</s> 开始自学 Web，虽然一直没做出来过什么东西，但是确实学会了各种技术栈，这次的作业一定程度上也借鉴了 Vue 的渲染思路（但是不多）。</p>
-                        <p>除了 V 社大礼包以外，比较喜欢的游戏还有<b>文明系列</b>，<b>帝国时代</b>，<b>狂热运输系列</b>，<b>Paradox 战犯大礼包</b>。</p>
+                        <p>喜欢动画，热爱游戏，虽然总是觉得有些ACG老粉总是带着婆罗门的偏见在审视当今业界，但是对花田十辉与其代表作 Girls Band Cry，京吹3，LoveLive! Superstar
+                            一样充满了意见。<s>（喷别人婆罗门的人，终将也会成为婆罗门）</s></p>
+                        <p>最近比较喜欢的动画当然是 <strong>《BanG Dream! It's MyGO!!!!!》</strong> <s>（所以才有了本组的抽象选题）</s>，另外也很喜欢 4 月的
+                            <strong>《终末电车去哪儿》</strong> 这部没什么人看的抽象电波原创。另外还很喜欢的是 <strong>《终将成为你》</strong> 和 <strong>《新世纪福音战士》</strong>，但是不喜欢明日香。</p>
+                        <p>喜欢火车，不管是坐火车还是拍火车。跑去日本旅游也天天在绕远路坐有意思的电车。目前最喜欢的车型应该是 JR 西日本的
+                            <strong>500系新干线</strong>，在旅游的时候也有幸于退役前体验到了这个最喜欢的车型。</p>
+                        <p>初中碰过一点算法竞赛，但是太菜了就没学下去，然后 <s>误入歧途</s> 开始自学 Web，虽然一直没做出来过什么东西，但是确实学会了各种技术栈，这次的作业一定程度上也借鉴了 Vue
+                            的渲染思路（但是不多）。</p>
+                        <p>除了 V 社大礼包以外，比较喜欢的游戏还有<strong>文明系列</strong>，<strong>帝国时代</strong>，<strong>狂热运输系列</strong>，<strong>Paradox 战犯大礼包</strong>。</p>
                         <p id="about">联系方式</p>
                         <p>Github: <a href="https://github.com/Dustin-Jiang">Dustin-Jiang</a></p>
                         <p>Outlook: <a href="mailto:dustinjiang@outlook.com">dustinjiang@outlook.com</a></p>
                         <p>Steam: <a href="https://steamcommunity.com/id/dustin-jiang/">dustin-jiang</a></p>
                     </div>
                 </div>
-                <div class = "footer">
+                <div class="footer">
                     <p>© 2024 光圈科技爱猫TV 保留所有权利。</p>
                 </div>
             </div>
         </div>
-    
+
         <script>
             function goBack() {
                 window.history.back();
             }
         </script>
-    </body>
-    </html>
+</body>
+
+</html>
